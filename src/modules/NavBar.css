@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+
+.Web-name {
+    font-size: larger;
+    color: #282c34;
+    background-color: silver;
+    margin: 0%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+}
+.Container {
+    display: flex;
+    justify-content: space-between;
+    color: #282c34;
+    background-color: silver;
+}
+.Menu {
+    margin-right: 10px;
+}
