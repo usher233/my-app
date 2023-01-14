@@ -8,15 +8,11 @@ const NavBar = (props) => {
 
   return (
     <div>
-    <div className="Container">
-      <h1 className="Web-name">CatBook</h1>
-      <img className="Menu" src={Menu} alt="Menu" onClick={toggleMenu} />
-    </div>
-    <div className="Dropdown-menu">
-        <ul>
-<DropdownItem />
-        </ul>
-    </div>
+      <nav className="Container">
+        <div className="Web-name"> Catbook</div>
+        <ul className="navbar-nav">{props.children}</ul>
+
+      </nav>
     </div>
   );
 };

@@ -6,9 +6,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.navitem {
+  display: flex;
+  
+}
 .App-header {
-  background-color: #282c34;
+  background-color: #484a4d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,3 +33,40 @@
     transform: rotate(360deg);
   }
 }
+.moving-image {
+  flex-direction: column;
+  border-radius: 50px;
+  size: 200px 400px;
+
+}
+.motion-inner-div{
+  display: flex;
+
+}
+.move-enter {
+  transform: translateX(-100%);
+}
+.move-enter-active {
+  transform: translateX(0%);
+  transition: transform 300ms;
+}
+.move-exit {
+  transform: translateX(0%);
+}
+.move-exit-active {
+  transform: translateX(20%);
+  transition: transform 300ms;
+}
+.move-appear {
+  transform: translateX(20%);
+}
+.move-appear-active {
+  transform: translateX(0%);
+  transition: transform 300ms;
+}
+.move-enter, .move-exit, .move-appear {
+  transition: transform 0.5s;
+}
+
+
+

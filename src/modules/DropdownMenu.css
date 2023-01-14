@@ -1,0 +1,90 @@
+@import '../index.css' ;
+@import './NavItem.css';
+
+.menu {
+    font-family: 'Cinzel', serif;
+}
+.icon-left {
+    --button-size: calc(var(--nav-size) * 0.4);
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: 50%;
+    background-color: #484a4d;
+    padding: 5px;
+    margin: 10px;
+    /* margin-right: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+.dropdown {
+    position : absolute;
+    transition: all;
+    animation: normal ;
+    top: 48px;
+    width: 300px;
+    transform: translateX(-45%);
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+}
+.menu-item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-radius: var(--border-radius);
+    transition: background var(--speed);
+    padding: 0.5rem;
+}
+
+.nav-item {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: normal;
+}
+.menu-item:hover {
+    background-color: #525357;
+}
+.icon-right {
+    margin-left: auto;
+}
+
+
+.menu-primary-enter{
+    position: absolute;
+    transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+}
+.menu-primary-exit {
+    position: absolute;
+    
+}
+.menu-primary-exit-active {
+    transform: translateX(-110%);
+    transition: all var(--speed) ease;
+}
+
+
+.menu-secondary-enter{
+    position: absolute;
+    transform: translateX(110%);
+}
+.menu-secondary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+}
+.menu-secondary-exit {
+    position: absolute;
+    
+}
+.menu-secondary-exit-active {
+    transform: translateX(110%);
+    transition: all var(--speed) ease;
+}

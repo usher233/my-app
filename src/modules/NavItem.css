@@ -1,0 +1,30 @@
+@import '../index.css' ;
+
+.nav-item {
+    width: calc(var(--nav-size) * 0.8) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-button {
+    --button-size: calc(var(--nav-size) * 0.4);
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: 50%;
+    background-color: #484a4d;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+.nav-item :hover {
+    filter: brightness(1.2);
+}
+
+.icon-button svg {
+    fill: var(--text-color);
+    width: 20px;
+    height: 20px;
+}
